@@ -1,13 +1,38 @@
 {
-  "name": "vue-contextmenu",
+  "name": "@shymean/vue-contextmenu",
+  "author": "shymean",
+  "license": "MIT",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "vue右键菜单指令，声明式配置右键菜单",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangxiangmin/vue-contextmenu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tangxiangmin/vue-contextmenu/issues"
+  },
+  "homepage": "https://github.com/tangxiangmin/vue-contextmenu#readme",
+  "keywords": [
+    "vue",
+    "vue",
+    "contextmenu",
+    "右键菜单"
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "README.md",
+    "package.json"
+  ],
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "dev": "vue-cli-service serve",
+    "build:example": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vue-contextmenu src/index.js",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {
+  "peerDependencies": {
     "core-js": "^3.6.5",
     "vue": "^2.6.11"
   },
@@ -18,6 +43,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
