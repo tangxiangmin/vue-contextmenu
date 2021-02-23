@@ -2,7 +2,7 @@
   "name": "@shymean/vue-contextmenu",
   "author": "shymean",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "description": "vue右键菜单指令，声明式配置右键菜单",
   "repository": {
@@ -24,11 +24,11 @@
     "README.md",
     "package.json"
   ],
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:example": "vue-cli-service build",
-    "build": "vue-cli-service build --target lib --name vue-contextmenu src/index.js",
+    "build": "vue-cli-service build --target lib --name index src/index.js",
     "lint": "vue-cli-service lint",
     "package": "npm run build &&  npm pack"
   },
