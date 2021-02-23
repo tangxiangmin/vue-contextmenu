@@ -2,7 +2,7 @@
   "name": "@shymean/vue-contextmenu",
   "author": "shymean",
   "license": "MIT",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "description": "vue右键菜单指令，声明式配置右键菜单",
   "repository": {
@@ -24,7 +24,7 @@
     "README.md",
     "package.json"
   ],
-  "main": "./dist/index.js",
+  "main": "./dist/index.common.js",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:example": "vue-cli-service build",
