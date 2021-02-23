@@ -30,12 +30,13 @@ npm i @shymean/vue-contextmenu -S
 
 ```js
 // 引入默认菜单样式，如果使用自定义菜单组件则无需引入
-import '@shymean/dist/vue-contextmenu.css'
+import '@shymean/vue-contextmenu/dist/index.css'
 
 import contextmenu from '@shymean/vue-contextmenu'
 
+const options = {} // 注册参数
 // 注册全局 v-contextmenu 指令
-Vue.use(contextmenu, options = {})
+Vue.use(contextmenu, options)
 ```
 支持注册参数
 * `name` 指令名称, 默认`contextmenu`
